@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0f7c11052c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Vincent - Developer Portfolio</title>
+</head>
+
+
+
+<body>
+  <!-- Loading Funny -->
+  <div id="loadingscreen">
+    <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>     
+    <p> <b>PORTFOLIO  LOADING</b> </p>
+  </div>
+
+  <a id="elementToShake" class="returnup"><i class="fa-solid fa-shuttle-space fa-rotate-270"></i><i  class="fa-solid fa-fire-flame-simple fa-rotate-180 fire"></i></a>  
+
+  <!-- Actual Website -->
+  <div id="website">
+
+    <section id="header-nav">
+      
+      <div style="padding-left: 25px; float: left;">
+        <a href="#">
+          <h1 class="wrap">
+            <span class="mid">&lt; Ruben Vincent / &gt;</span>
+          </h1>
+          <p>Software Developer</p>
+        </a>
+      </div>
+
+      <nav class="main">
+        <ul style="float: inline-end; padding-right: 5%;">
+          <li><a onclick="smoothscroll('website')"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a onclick="smoothscroll('About_Me')"><i class="fa-solid fa-user"></i> About Me</a></li>
+          <li><a onclick="smoothscroll('SoftSkills')"><i class="fa-solid fa-folder"></i> SoftSkills</a></li>
+          <li><a onclick="smoothscroll('Skills')"><i class="fa-solid fa-address-card"></i> Skills</a></li>
+          <li><a onclick="smoothscroll('Projects')"><i class="fa-solid fa-dumbbell"></i> Projects</a></li>
+        </ul>
+      </nav>
+
+    </section>
+
+    <main>
+
+      <!-- <section id="item">
+        <div>
+          <h2>Welcome to My Portfolio</h2>
+        </div>
+      </section> -->
+
+
+      <section id="slide">
+        <div id="item1">
+          <h2>Welcome to My Portfolio</h2>
+
+          <span>Welcome to Vinc3nt's Digital Haven! </span>
+          <span>Step into a world where code breathes life into ideas and innovation meets pixels. I'm Vincent, a passionate developer crafting digital experiences.</span>
+          <span>Explore the projects that echo my commitment to excellence, and delve into the blog for insights into my coding journey. Your presence here is an honor; let's make this digital exploration unforgettable.</span>
+          <span>Cheers to innovation and collaboration! Vinc3nt's 🚀💻</span>
+        </div>
+
+        <img class="selfportrait" src="It`s_Me.jpg" alt="apparrently red eyes on camera is still possible">
+
+        <img class="lang" src="dutchflag.png" alt="de netterlandsch">
+        <img class="lang1" src="deutschland.png" alt="de duitslandchs">
+        <img class="lang2" src="england.png" alt="de englandscbh">
+        
+      </section>
+
+
+      <section id="About_Me">
+        <div id="aboutme">
+          <h2>About Me</h2>
+          <div>
+            <p id="me"></p>
+            <p>a passionate and dedicated software developer currently living in Eesveen, The Netherlands. </p>
+            <p>I specialize in Fullstack Development, and I love turning ideas into reality through the power of creativity , ingenuity and code.</p>
+          </div>
+        </div>
+
+        <div id="aboutmeSelect" style="padding-left: 15px;">
+          <div>
+            <ul>
+              <li><a onclick="aboutMe(0)"> <b> My Story </b></a></li>
+              <li><a onclick="aboutMe(1)"> <b> What I love </b> </a></li>
+              <li><a onclick="aboutMe(2)"> <b> My Approach </b> </a></li>
+              <li><a onclick="aboutMe(3)"> <b> Let's Connect </b> </a></li>
+              <li><a onclick="aboutMe(4)"> <b> My Usecase </b> </a></li>
+
+            </ul>
+            <div class="content">
+              <h2 id="SelectedName">My Story</h2>
+              <div>
+                <p>my interest in programming started on a weird and wacky way i was always interested in biological lifeforms and how they came to be.</p>
+                <p>To have something "An Organism" be created from carbon and warmth to manage simple tasks to advanced in my personal opinion this was weirdly impossible</p>
+                <p>then i found out about programming and started thinking about how i can achieve advanced science through a lot of simple math</p>
+                <p>so that is kinda how i started.</p>
+                <p>my first experience with programming was with a raspberry pi and debian to recreate arduino projects</p>
+              </div>
+            </div>
+
+            <div class="content" style="display: none;">
+              <h2>What I Love</h2>
+              <div>
+                <p>I love the struggle and eventually fixing the reason of that struggle</p>
+                <p>this example can be used for programming, basically the only thing you do is make problems and fix them</p>
+                <p>the risk reward is like a game to me</p>
+              </div>
+            </div>
+
+            <div class="content" style="display: none;" >
+              <h2>My Approach</h2>
+              <div>
+                <p>To Be Written</p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="content" style="display: none;">
+              <h2>Let's Connect</h2>
+              <div>
+                <p>To Be Written</p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="content" style="display: none;">
+              <h2>My Usecase</h2>
+              <div>
+                <p>Programming Languages i have learned:</p>
+                <p> Python, PHP, JavaScript, Java, C#, C++ </p>
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="SoftSkills">
+        <h2 style="text-align: center; padding-bottom: 10px; border-bottom: solid #00000021;"> <i class="fa-solid fa-brain"></i> My softskills </h2>
+
+        <div class="softskillscol">
+          <div class="project">
+            <h3> <i class="fa-solid fa-comments"></i> Communicatie</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi perspiciatis cum laudantium quasi molestiae architecto recusandae hic numquam velit at, ea dolor asperiores suscipit dolore? Debitis quos eius exercitationem.</p>
+            <div class="hidden">
+              <p>Communicatie is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(0)"> <i class="fa-solid fa-caret-down"> </i>   More Info</a>
+          </div>
+
+          <div class="project">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Probleem oplossend vermogen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, earum deleniti consectetur doloribus explicabo, ullam voluptatibus excepturi repellendus dolorum recusandae provident eos ab ratione hic magni rem maiores officia debitis.</p>
+            <div class="hidden">
+              <p>Probleem oplossend vermogen is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(1)"  > <i class="fa-solid fa-caret-down"> </i> View Info</a>
+          </div>
+
+          <div class="project">
+            <h3><i class="fa-solid fa-puzzle-piece"></i> Kritish Nadenkende</h3>
+            <!-- <img src="Fur.png" alt="Picture of me"> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatem vero id commodi inventore, saepe nesciunt perferendis magnam, pariatur, accusantium tenetur distinctio mollitia praesentium repellendus ab illo vitae quia harum.</p>
+            <div class="hidden">
+              <p>Kritish Nadenken is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(2)"> <i class="fa-solid fa-caret-down"> </i> View Info</a>
+          </div>
+
+          <div class="project">
+            <h3><i class="fa-solid fa-share-nodes"></i> Samenwerking </h3>
+            <!-- <img src="Fur.png" alt="Picture of me"> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatem vero id commodi inventore, saepe nesciunt perferendis magnam, pariatur, accusantium tenetur distinctio mollitia praesentium repellendus ab illo vitae quia harum.</p>
+            <div class="hidden">
+              <p>Creativiteit is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(3)"> <i class="fa-solid fa-caret-down"> </i> View Info</a>
+          </div>
+
+          <div class="project">
+            <h3><i class="fa-solid fa-book-open-reader"></i> Flexibel in leren</h3>
+            <!-- <img src="Fur.png" alt="Picture of me"> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatem vero id commodi inventore, saepe nesciunt perferendis magnam, pariatur, accusantium tenetur distinctio mollitia praesentium repellendus ab illo vitae quia harum.</p>
+            <div class="hidden">
+              <p>Creativiteit is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(4)"> <i class="fa-solid fa-caret-down"> </i> View Info</a>
+          </div>
+          
+          <div class="project">
+            <h3><i class="fa-solid fa-arrow-up-right-dots"></i> vermogen voor zelfverbetering</h3>
+            <!-- <img src="Fur.png" alt="Picture of me"> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatem vero id commodi inventore, saepe nesciunt perferendis magnam, pariatur, accusantium tenetur distinctio mollitia praesentium repellendus ab illo vitae quia harum.</p>
+            <div class="hidden">
+              <p>Creativiteit is zeer belangrijk voor mij</p>
+            </div>
+            <a onclick="expand(5)"> <i class="fa-solid fa-caret-down"> </i> View Info</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills">
+        <h2><i class="fa-solid fa-wrench"></i> Skills</h2>
+        <p>I am a web developer with a strong background in...</p>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </section>
+
+
+      <section id="Projects">
+        <h2> <i class="fa-solid fa-folder"></i> Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p style="padding-bottom: 5%;">Thanks for stopping by, and I look forward to the exciting future of software development and what it has to offer!</p>
+      <p>My e-mail: ruben-ensing@hotmail.nl</p>
+      <p>Connect with me on <a href="#" >LinkedIn</a> | <a href="#">Twitter</a></p>
+    </footer>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
